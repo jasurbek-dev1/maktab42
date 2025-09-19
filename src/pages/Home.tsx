@@ -3,49 +3,51 @@ import ImageSlider from '../components/ImageSlider';
 import { Calendar, Users, Award, BookOpen } from 'lucide-react';
 
 const Home = () => {
-  const events = [
-    {
-      id: 1,
-      title: 'Lochinlar 2025',
-      date: 'Mart 15, 2024',
-      image: 'src/assets/IMG_2886.JPG',
-      description: "42 - maktabning lochinlar jamoasi yutuqlari ko'rishingiz mumkin "
-    },
-    {
-      id: 2,
-      title: ' Sport musobaqasi Fudbol',
-      date: ', 1 - oktyabr 2024',
-      image: 'src/assets/IMG_2887.JPG',
-      description: "42 - maktabda o'tkazilgan fudbol musobaqisidan lavha"
-    },
-    {
-      id: 3,
-      title: 'Madaniyat Festivali',
-      date: 'May 10, 2024',
-      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
-      description: "Turli madaniyatlarni bayram qilish, chiqishlar, ovqat va ko'rgazmalar bilan"
-    },
-    {
-      id: 4,
-      title: 'Bitiruv marosimi',
-      date: 'May 25, 2025',
-      image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
-      description: 'Bitiruvchilarimizni va ularning akademik yutuqlarini sharaflash.'
-    },
-    {
-      id : 5,
-      title:"Tadbir marosimi ",
-      date:"May 1, 2025",
-      image:"",
-      description:"Bizda o'zgacha tadbirlar o'tikizlaybdi"
-    },
-    {
-      id:6,
-      title:"Bizda shaxmat musobaqasi",
-      date:"april 2 , 2024",
-      image: "",
-    }
-  ];
+ const events = [
+  {
+    id: 1,
+    title: 'Lochinlar 2025',
+    date: 'Mart 15, 2024',
+    image: '/assets/IMG_2886.JPG',
+    description: "42 - maktabning lochinlar jamoasi yutuqlari ko'rishingiz mumkin "
+  },
+  {
+    id: 2,
+    title: 'Sport musobaqasi Fudbol',
+    date: '1 - oktyabr 2024',
+    image: '/assets/IMG_2887.JPG',
+    description: "42 - maktabda o'tkazilgan fudbol musobaqasidan lavha"
+  },
+  {
+    id: 3,
+    title: 'Madaniyat Festivali',
+    date: 'May 10, 2024',
+    image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+    description: "Turli madaniyatlarni bayram qilish, chiqishlar, ovqat va ko'rgazmalar bilan"
+  },
+  {
+    id: 4,
+    title: 'Bitiruv marosimi',
+    date: 'May 25, 2025',
+    image: 'https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop',
+    description: 'Bitiruvchilarimizni va ularning akademik yutuqlarini sharaflash.'
+  },
+  {
+    id: 5,
+    title: "Tadbir marosimi",
+    date: "May 1, 2025",
+    image: '/assets/IMG_2888.JPG', // shu yerga haqiqiy fayl nomini qo'y
+    description: "Bizda o'zgacha tadbirlar o'tikizlaybdi"
+  },
+  {
+    id: 6,
+    title: "Bizda shaxmat musobaqasi",
+    date: "aprel 2, 2024",
+    image: '/assets/IMG_2889.JPG', // shu yerga ham rasm bo'lsa qo'y
+    description: "Shaxmat musobaqasidan lavha"
+  }
+];
+
 
   return (
     <div className="min-h-screen">

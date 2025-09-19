@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const ImageSlider = () => {
@@ -7,30 +7,29 @@ const ImageSlider = () => {
   const slides = [
     {
       id: 1,
-      image: 'src/assets/IMG_2883.JPG',
-      title: 'Zamonaviy maktab binos',
+      image: '/assets/IMG_2883.JPG',
+      title: 'Zamonaviy maktab binosi',
       description: "Sifatli ta'lim uchun eng zamonaviy imkoniyatlar"
     },
     {
       id: 2,
-      image: 'src/assets/IMG_2884.JPG',
+      image: '/assets/IMG_2884.JPG',
       title: 'Sport va Dam olish',
-      description: 'Jismoniy rivojlanish uchun keng qamrovli sharoitlart'
+      description: 'Jismoniy rivojlanish uchun keng qamrovli sharoitlar'
     },
     {
       id: 3,
-      image: 'src/assets/IMG_3011.JPG',
+      image: '/assets/IMG_3011.JPG',
       title: 'Interaktiv sinfxonalar',
       description: 'Texnologiya yordamida takomillashtirilgan o‘rganish muhitlari'
     },
-     {
-      id: 3,
-      image: 'src/assets/IMG_3010.JPG',
+    {
+      id: 4,
+      image: '/assets/IMG_3010.JPG',
       title: 'Maktab chiroyli hovlisi',
       description: "Chiroyli shart-sharoitlar o'quvchilar uchun"
     },
-      
-  ]; 
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -54,8 +53,8 @@ const ImageSlider = () => {
         <div
           key={slide.id}
           className={`absolute inset-0 transition-transform duration-500 ease-in-out ${
-            index === currentSlide ? 'transform translate-x-0' : 
-            index < currentSlide ? 'transform -translate-x-full' : 'transform translate-x-full'
+            index === currentSlide ? 'translate-x-0' :
+            index < currentSlide ? '-translate-x-full' : 'translate-x-full'
           }`}
         >
           <div
